@@ -11,18 +11,18 @@ class Song
       @artist = artist 
       @genre = genre 
       @@count +=1 
-      if genre_count[genre]
-        genre_count[genre]+=1 
+      if @@genre_count[genre]
+        @@genre_count[genre]+=1 
       else 
         @@genres << genre 
-        genre_count[genre] = 1 
+        @@genre_count[genre] = 1 
       end 
       
-      if artist_count[artist]
-        artist_count[artist]+=1 
+      if @@artist_count[artist]
+        @@artist_count[artist]+=1 
       else 
         @@artists << artist 
-        artist_count[artist] = 1 
+        @@artist_count[artist] = 1 
       end 
       
   end 
